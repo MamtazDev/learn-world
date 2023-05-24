@@ -1,8 +1,17 @@
 import React from "react";
 
-const SectionBanner = ({ bg,route, content, bannerImg }) => {
+const SectionBanner = ({ bg, route, content, bannerImg }) => {
   return (
-    <div className={`course_banner ${bg}  py-[37px] mt-[20px] mb-[60px]`}>
+    <div
+      style={{
+        backgroundImage: `url(${bg})`,
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        padding:" 150px 0"
+      }}
+      className={`course_banner  py-[37px] mt-[20px] mb-[60px]`}
+    >
       <div className="container">
         <div className="grid grid-cols-1 lg:grid-cols-2  items-center">
           <div>
