@@ -91,10 +91,13 @@ const Footer = () => {
           <div>
             <h5 className="text-xl font-bold mb-4">Contact</h5>
             <div className="flex flex-col gap-y-3">
-              <p>
+              <a
+                href="https://goo.gl/maps/yXbJ7wifDdquGLJw5?coh=178573&entry=tt"
+                target="_blank" rel="noreferrer"
+              >
                 <span className="font-bold">Address :</span>{" "}
                 <span className="opacity-50">Shaymoli, Dhaka</span>
-              </p>
+              </a>
               <p>
                 <span className="font-bold">Phone :</span>{" "}
                 <span className="opacity-50"> +0123456789</span>
