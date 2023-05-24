@@ -104,12 +104,11 @@ a:hover {
 .gradient_btn {
   background: linear-gradient(88.98deg, #ff047d 2.19%, #ff8804 99.89%);
   border-radius: 15px;
-  padding: 20px 40px;
+  padding: 10px 35px;
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
-  line-height: 24px;
   color: #ffffff;
 }
 
@@ -132,12 +131,11 @@ a.gradient_btn:hover {
 .blue_btn {
   background: #0a0762;
   border-radius: 15px;
-  padding: 20px 40px;
+  padding: 10px 35px;
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
-  line-height: 24px;
   color: #ffffff;
 }
 

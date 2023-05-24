@@ -65,8 +65,8 @@ const Banner = () => {
               initial={{ x: -300 }}
               animate={{ x: -120 }}
               transition={{
-                delay: 0.2,
-                duration: 2,
+                delay: 0.1,
+                duration: 0.5,
                 type: "spring",
                 stiffness: 20,
               }}

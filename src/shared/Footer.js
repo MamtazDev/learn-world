@@ -74,11 +74,9 @@ const Footer = () => {
           <div>
             <h5 className="text-xl font-bold mb-4">Useful Links</h5>
             <div className="flex flex-col gap-y-3 opacity-50 ">
-              <NavLink to="/">Home</NavLink>
               <NavLink to="/">Course</NavLink>
               <NavLink to="/">About Us</NavLink>
               <NavLink to="/">Events</NavLink>
-              <NavLink to="/">Page</NavLink>
             </div>
           </div>
           <div>
