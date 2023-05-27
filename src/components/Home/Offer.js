@@ -39,12 +39,17 @@ const Offer = () => {
         </Title>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[30px] justify-center">
           {offers.map((offer, index) => (
-            <div key={index} className={offer.className}>
+            <a
+              href="https://drive.google.com/uc?export=download&id=1_YFVRi2S67mEytLgUy67ez3_e0VAykKD"
+              download
+              key={index}
+              className={offer.className}
+            >
               <img className="mx-auto mb-[30px]" src={offer.pic} alt="" />
               <p className="text-white text-[24px] font-[600] text-center">
                 {offer.title}
               </p>
-            </div>
+            </a>
           ))}
         </div>
       </div>
