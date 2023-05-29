@@ -45,7 +45,11 @@ const EventDetails = () => {
               <h2 className="text-[#31374D] text-[32px]  mb-[25px] font-[700]">
                 Time & Venue
               </h2>
-              <div className="grid grid-cols-1 lg:grid-cols-3 gap-[48px]">
+              <a
+                target="_blank"
+                href="https://goo.gl/maps/nECov5NvXf2WRsD38?coh=178573&entry=tt"
+                className="grid grid-cols-1 lg:grid-cols-3 gap-[48px]"
+              >
                 <div className="bg-[#FBFDFF] py-[20px] flex gap-[10px] items-center justify-center time_venue">
                   <img src={location} alt="" />
                   <p className="text-[#000000cc] text-[20px] font-[600] leading-[30px]">
@@ -64,12 +68,12 @@ const EventDetails = () => {
                     20 June 2022
                   </p>
                 </div>
-              </div>
+              </a>
             </div>
             <Link to="/joinEvent">
-            <button className="bg-[#0C1F38] py-[28px] rounded-[15px] w-100 text-white text-[28px] font-[600]">
-              Join Now
-            </button>
+              <button className="bg-[#0C1F38] py-[28px] rounded-[15px] w-100 text-white text-[28px] font-[600]">
+                Join Now
+              </button>
             </Link>
           </div>
 

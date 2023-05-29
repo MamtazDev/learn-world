@@ -34,8 +34,8 @@ const AboutCarousel = () => {
     slidesToScroll: 3,
     initialSlide: 0,
     autoplay: true,
-    speed: 3000,
-    autoplaySpeed: 3000,
+    speed: 5000,
+    autoplaySpeed: 5000,
     beforeChange: (current, next) => setSlideIndex(next),
     centerMode: true,
     responsive: [

@@ -11,7 +11,7 @@ const Events = () => {
       <div className="container">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-[30px]">
           {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((event, index) => (
-            <Link to="/eventDetails" key={index} className="rounded-[5px]">
+            <Link to="/eventDetails" key={index} className="rounded-[5px] transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-100 duration-200">
               <img className="w-full" src={blueprint} alt="" />
 
               <div className="bg-[#EEEEEE] p-[16px] rounded-b-[5px] flex flex-col gap-y-8">

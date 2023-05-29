@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const CourseCard = ({ course }) => {
   return (
-    <div className="m-[15px] carousel_card">
+    <div className="m-[15px] carousel_card transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-100 duration-200">
       <div className={course.className}>
         <Link to="/courseDetails">
           <img className="mx-auto" src={course.pic} alt="" />

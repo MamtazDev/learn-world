@@ -57,7 +57,7 @@ const Footer = () => {
         <div className="flex justify-between flex-wrap gap-5 mb-5">
           <div>
             <img src={logo} alt="" />
-            <p className="my-4 opacity-50 ">
+            <p className="my-4 opacity-50">
               Eros fermentum lacus, scelerisque vivamus pellentesque <br /> urna
               vitae fringilla interdum eget fermentum, integer <br />{" "}
               scelerisque nunc
