@@ -34,8 +34,8 @@ const AboutCarousel = () => {
     slidesToScroll: 3,
     initialSlide: 0,
     autoplay: true,
-    speed: 2000,
-    autoplaySpeed: 2000,
+    speed: 3000,
+    autoplaySpeed: 3000,
     beforeChange: (current, next) => setSlideIndex(next),
     centerMode: true,
     responsive: [
@@ -71,7 +71,7 @@ const AboutCarousel = () => {
         <Title>
           <span className="mb-[28.56px]">What Our Students Say About Us</span>{" "}
         </Title>
-        <div className="slider"></div>
+        {/* <div className="slider"></div> */}
         <Slider {...settings}>
           {images.map((imgg, index) => (
             <div

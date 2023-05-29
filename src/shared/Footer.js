@@ -65,7 +65,11 @@ const Footer = () => {
             <div className="flex gap-6">
               {socialMedia.map((icon, index) => (
                 <div key={index}>
-                  <img src={icon.pic} alt="" />
+                  <img
+                    className="transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300"
+                    src={icon.pic}
+                    alt=""
+                  />
                 </div>
               ))}
             </div>
@@ -93,7 +97,8 @@ const Footer = () => {
             <div className="flex flex-col gap-y-3">
               <a
                 href="https://goo.gl/maps/yXbJ7wifDdquGLJw5?coh=178573&entry=tt"
-                target="_blank" rel="noreferrer"
+                target="_blank"
+                rel="noreferrer"
               >
                 <span className="font-bold">Address :</span>{" "}
                 <span className="opacity-50">Shaymoli, Dhaka</span>
