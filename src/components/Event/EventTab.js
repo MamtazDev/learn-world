@@ -1,23 +1,21 @@
 import React, { useState } from "react";
-import AllCourse from "./AllCourse";
+import Events from "./Events";
 
-const CoursesTab = () => {
+const EventTab = () => {
   const [activeMenu, setMenu] = useState(1);
   const [tab, setTab] = useState("All");
   const tabs = [
     { id: 1, name: "All" },
-    { id: 2, name: "Web Design" },
-    { id: 3, name: "Product Design" },
-    { id: 4, name: "Graphics Design" },
-    { id: 5, name: "Digital Marketing" },
+    { id: 2, name: "Completed" },
+    { id: 3, name: "Upcoming" },
   ];
   const handleMenu = (data) => {
     setMenu(data?.id);
     setTab(data?.name);
   };
   return (
-    <div className="">
-      <div className="mb-[90px]">
+    <div>
+       <div className="mb-[90px]">
         <div className="course_tab p-3 flex justify-center gap-[20px]   overflow-x-auto ">
           {tabs.map((tab) => (
             <button
@@ -34,14 +32,12 @@ const CoursesTab = () => {
       </div>
 
       <div>
-        {activeMenu === 1 && <AllCourse />}
-        {activeMenu === 2 && <AllCourse />}
-        {activeMenu === 3 && <AllCourse />}
-        {activeMenu === 4 && <AllCourse />}
-        {activeMenu === 5 && <AllCourse />}
+        {activeMenu === 1 && <Events />}
+        {activeMenu === 2 && <Events />}
+        {activeMenu === 3 && <Events />}
       </div>
     </div>
   );
 };
 
-export default CoursesTab;
+export default EventTab;
