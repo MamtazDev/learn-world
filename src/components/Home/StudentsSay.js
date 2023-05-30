@@ -34,7 +34,9 @@ const StudentsSay = () => {
           responsive={responsive}
           infinite={true}
           autoPlay={true}
-          autoPlaySpeed={2000}
+          autoPlaySpeed={3000}
+          transitionDuration={5000}
+          animation={false}
         >
           <div className="lg:px-32 flex flex-col lg:flex-row  items-center gap-[30px]">
             <div className="">
