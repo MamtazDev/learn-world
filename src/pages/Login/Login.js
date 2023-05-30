@@ -7,6 +7,7 @@ import "./Login.css";
 import { Link, useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { userLoggedIn } from "../../features/auth/authSlice";
+import ReCAPTCHA from "react-google-recaptcha";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -28,6 +29,9 @@ const Login = () => {
     dispatch(userLoggedIn(data));
     navigate("/");
   };
+  function onChange(value) {
+    console.log("Captcha value:", value);
+  }
   return (
     <div className="relative">
       <AuthHeader
@@ -84,21 +88,23 @@ const Login = () => {
                     Start Now
                   </button>
                 </div>
-
                 <div className="divider font-[600] text-[20px] my-[35px]">
                   OR
                 </div>
               </div>
-              <div className="flex items-center justify-center gap-[15px]  border-[1px] border-[#cecece] rounded-[3px] py-[14px]">
+              <div className="mb-4 flex items-center justify-center gap-[15px]  border-[1px] border-[#cecece] rounded-[3px] py-[14px]">
                 <div>
                   <img src={GoogleLogo} alt="" />
                 </div>
                 <div className="font-[500] text-[18px] ">LogIn with Google</div>
               </div>
             </div>
+          <ReCAPTCHA sitekey="Your client site key" onChange={onChange} />
           </form>
         </div>
       </div>
+
+    
     </div>
   );
 };
