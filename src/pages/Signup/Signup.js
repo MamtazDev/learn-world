@@ -81,7 +81,7 @@ const Signup = () => {
                     />
                     <input
                       type="tel"
-                      placeholder="Enter phone number"
+                      placeholder="ex : demo@gmail.com"
                       className="input input-bordered w-full h-[65px] border-[#cecece] py-[19px] rounded-[3px] pl-[35px]"
                       required
                     />

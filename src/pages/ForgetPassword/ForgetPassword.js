@@ -55,7 +55,7 @@ const ForgetPassword = () => {
                 <div>
                   <input
                     type="number"
-                    placeholder="Enter phone number"
+                    placeholder="ex : demo@gmail.com"
                     className="input input-bordered w-full h-[65px] border-[#cecece] mt-[50px] mb-[30px] py-[19px] rounded-[3px] pl-[35px]"
                     required
                   />

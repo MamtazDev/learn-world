@@ -66,7 +66,7 @@ const Login = () => {
               <div>
                 <input
                   type="email"
-                  placeholder="Enter phone number"
+                  placeholder="ex : demo@gmail.com"
                   name="email"
                   className="input input-bordered w-full h-[65px] border-[#cecece] mt-[50px] mb-[30px] py-[19px] rounded-[3px] pl-[35px]"
                   required
@@ -99,14 +99,17 @@ const Login = () => {
                 <div className="font-[500] text-[18px] ">LogIn with Google</div>
               </div>
             </div>
-          <ReCAPTCHA sitekey="Your client site key" onChange={onChange} />
+            <ReCAPTCHA sitekey="6Le-u2smAAAAAPqatuxyHq5MjxJzsYt7sfzRvSon" onChange={onChange} />
           </form>
         </div>
       </div>
-
-    
     </div>
   );
 };
 
 export default Login;
+
+
+
+// 6Le-u2smAAAAAPqatuxyHq5MjxJzsYt7sfzRvSon
+// 6Le-u2smAAAAAEyreruW8u81n8WwdXk8cjbpgAEI

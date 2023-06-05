@@ -22,7 +22,7 @@ const CourseDetailsPage = () => {
 
   return (
     <div>
-  <div className="video-page">
+  {/* <div className="video-page">
       <div className="video-list">
         <h3>Video List</h3>
         <ul>
@@ -50,7 +50,11 @@ const CourseDetailsPage = () => {
           onEnded={handleVideoEnd}
         ></iframe>
       </div>
-    </div>
+    </div> */}
+
+
+
+
 
       <SectionBanner
         bg={bg}
